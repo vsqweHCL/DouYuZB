@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="hWC-Wm-irT">
             <objects>
-                <viewController id="FBP-ph-upn" sceneMemberID="viewController">
+                <viewController id="FBP-ph-upn" customClass="HomeViewController" customModule="DouYuZB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YWP-hN-quC"/>
                         <viewControllerLayoutGuide type="bottom" id="dnG-84-1MV"/>
@@ -42,7 +42,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KpM-7O-ufw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="-395"/>
+            <point key="canvasLocation" x="11" y="-380"/>
         </scene>
     </scenes>
     <resources>

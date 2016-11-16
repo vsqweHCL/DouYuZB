@@ -24,6 +24,7 @@
 		DAA4CBA81DCB01D100AD517B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA4CBA71DCB01D100AD517B /* Home.storyboard */; };
 		DAA4CBAA1DCB01FB00AD517B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */; };
 		DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4CBAC1DCB107600AD517B /* UIBarButtonItem-Extension.swift */; };
+		DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		DAA4CBA71DCB01D100AD517B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAA4CBAC1DCB107600AD517B /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			children = (
 				DAA4CBA71DCB01D100AD517B /* Home.storyboard */,
 				DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */,
+				DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			files = (
 				DAA4CBA61DCB019E00AD517B /* MainViewController.swift in Sources */,
 				DA257F081DCB7E53000BD7B9 /* UIColor-Extension.swift in Sources */,
+				DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */,
 				DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */,

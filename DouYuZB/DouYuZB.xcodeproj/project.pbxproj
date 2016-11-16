@@ -25,6 +25,10 @@
 		DAA4CBAA1DCB01FB00AD517B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */; };
 		DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4CBAC1DCB107600AD517B /* UIBarButtonItem-Extension.swift */; };
 		DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */; };
+		DAC2B1271DDCB41C009E2599 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1251DDCB41C009E2599 /* CollectionHeaderView.swift */; };
+		DAC2B1281DDCB41C009E2599 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */; };
+		DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1291DDCBA0C009E2599 /* CollectionViewNormalCell.swift */; };
+		DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAA4CBAC1DCB107600AD517B /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		DAC2B1251DDCB41C009E2599 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		DAC2B1291DDCBA0C009E2599 /* CollectionViewNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalCell.swift; sourceTree = "<group>"; };
+		DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +241,8 @@
 		DAA4CBA11DCB016000AD517B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DAC2B1251DDCB41C009E2599 /* CollectionHeaderView.swift */,
+				DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +267,8 @@
 			children = (
 				DA257F011DCB6ED4000BD7B9 /* PageTitleView.swift */,
 				DA257F051DCB7C4E000BD7B9 /* PageContentView.swift */,
+				DAC2B1291DDCBA0C009E2599 /* CollectionViewNormalCell.swift */,
+				DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -333,7 +345,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "HCL黄";
 				TargetAttributes = {
 					DAA4A2921DCA55920093E4D4 = {
@@ -378,9 +390,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA4CBA81DCB01D100AD517B /* Home.storyboard in Resources */,
+				DAC2B1281DDCB41C009E2599 /* CollectionHeaderView.xib in Resources */,
 				DAA4A2A11DCA55920093E4D4 /* LaunchScreen.storyboard in Resources */,
 				DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */,
 				DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */,
+				DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */,
 				DAA4A2CE1DCA6F100093E4D4 /* Live.storyboard in Resources */,
 				DAA4A2D31DCA6F460093E4D4 /* Profile.storyboard in Resources */,
 				DAA4A2D01DCA6F2E0093E4D4 /* Follow.storyboard in Resources */,
@@ -409,9 +423,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA4CBA61DCB019E00AD517B /* MainViewController.swift in Sources */,
+				DAC2B1271DDCB41C009E2599 /* CollectionHeaderView.swift in Sources */,
 				DA257F081DCB7E53000BD7B9 /* UIColor-Extension.swift in Sources */,
 				DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
+				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
 				DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */,
 				DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */,
 				DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */,
@@ -495,8 +511,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -541,8 +559,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -561,6 +581,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

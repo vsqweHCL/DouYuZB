@@ -29,6 +29,8 @@
 		DAC2B1281DDCB41C009E2599 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */; };
 		DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1291DDCBA0C009E2599 /* CollectionViewNormalCell.swift */; };
 		DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */; };
+		DAC2B12F1DDCC294009E2599 /* CollectionViewPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B12D1DDCC294009E2599 /* CollectionViewPrettyCell.swift */; };
+		DAC2B1301DDCC294009E2599 /* CollectionViewPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B12E1DDCC294009E2599 /* CollectionViewPrettyCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		DAC2B1291DDCBA0C009E2599 /* CollectionViewNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalCell.swift; sourceTree = "<group>"; };
 		DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
+		DAC2B12D1DDCC294009E2599 /* CollectionViewPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPrettyCell.swift; sourceTree = "<group>"; };
+		DAC2B12E1DDCC294009E2599 /* CollectionViewPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewPrettyCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 				DA257F051DCB7C4E000BD7B9 /* PageContentView.swift */,
 				DAC2B1291DDCBA0C009E2599 /* CollectionViewNormalCell.swift */,
 				DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */,
+				DAC2B12D1DDCC294009E2599 /* CollectionViewPrettyCell.swift */,
+				DAC2B12E1DDCC294009E2599 /* CollectionViewPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 				DAC2B1281DDCB41C009E2599 /* CollectionHeaderView.xib in Resources */,
 				DAA4A2A11DCA55920093E4D4 /* LaunchScreen.storyboard in Resources */,
 				DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */,
+				DAC2B1301DDCC294009E2599 /* CollectionViewPrettyCell.xib in Resources */,
 				DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */,
 				DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */,
 				DAA4A2CE1DCA6F100093E4D4 /* Live.storyboard in Resources */,
@@ -430,6 +437,7 @@
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
 				DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */,
 				DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */,
+				DAC2B12F1DDCC294009E2599 /* CollectionViewPrettyCell.swift in Sources */,
 				DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */,
 				DA257F041DCB70C1000BD7B9 /* Common.swift in Sources */,
 				DAA4CBAA1DCB01FB00AD517B /* HomeViewController.swift in Sources */,

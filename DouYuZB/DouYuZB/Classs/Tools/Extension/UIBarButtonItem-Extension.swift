@@ -9,12 +9,12 @@
 import UIKit
 
 extension UIBarButtonItem {
-    class func createItem(imageName: String, highImageName: String, size: CGSize) ->UIBarButtonItem {
+    class func createItem(_ imageName: String, highImageName: String, size: CGSize) ->UIBarButtonItem {
         
         let btn = UIButton()
-        btn.setImage(UIImage(named: imageName), forState: .Normal)
-        btn.setImage(UIImage(named: highImageName), forState: .Highlighted)
-        btn.frame = CGRect(origin: CGPointZero, size: size)
+        btn.setImage(UIImage(named: imageName), for: UIControlState())
+        btn.setImage(UIImage(named: highImageName), for: .highlighted)
+        btn.frame = CGRect(origin: CGPoint.zero, size: size)
         let item = UIBarButtonItem(customView: btn)
         
         return item
@@ -22,18 +22,18 @@ extension UIBarButtonItem {
     
     // 便利构造函数：1> convenience开头 2>在构造函数中必须明确调用一个设计的构造函数(self)
     // swift语法，可以传默认参数，在下面要做判断
-    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSizeZero) {
+    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize.zero) {
         let btn = UIButton()
-        btn.setImage(UIImage(named: imageName), forState: .Normal)
+        btn.setImage(UIImage(named: imageName), for: UIControlState())
         if highImageName != "" {
-            btn.setImage(UIImage(named: highImageName), forState: .Highlighted)
+            btn.setImage(UIImage(named: highImageName), for: .highlighted)
         }
         
-        if size == CGSizeZero {
+        if size == CGSize.zero {
             btn.sizeToFit()
         }
         else {
-            btn.frame = CGRect(origin: CGPointZero, size: size)
+            btn.frame = CGRect(origin: CGPoint.zero, size: size)
         }
         
         self.init(customView: btn)

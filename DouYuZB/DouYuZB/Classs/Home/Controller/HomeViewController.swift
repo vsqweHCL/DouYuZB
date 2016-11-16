@@ -13,7 +13,7 @@ private let kTitleViewH: CGFloat = 40
 class HomeViewController: UIViewController {
 
     // MARK:- 懒加载PageTitleView
-    private lazy var pageTitleView: PageTitleView = {[weak self] in
+    fileprivate lazy var pageTitleView: PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         
@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     }()
     
     // MARK:- 懒加载PageContentView
-    private lazy var pageContentView: PageContentView = {[weak self] in
+    fileprivate lazy var pageContentView: PageContentView = {[weak self] in
         
         // 1.确定内容的frame
         let contentH = kScreenH - kStatusBarH - kNavigationBarH
@@ -56,7 +56,7 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController {
 
-    private func setupUI() {
+    fileprivate func setupUI() {
         // 0.不需要调整UIScrollView的内边距
         automaticallyAdjustsScrollViewInsets = false
         
@@ -68,18 +68,18 @@ extension HomeViewController {
         
         // 3.添加ContentView
         view.addSubview(pageContentView)
-        pageContentView.backgroundColor = UIColor.purpleColor()
+        pageContentView.backgroundColor = UIColor.purple
     }
     
-    private func setupNavigationBar() {
+    fileprivate func setupNavigationBar() {
         // 1.设置左侧的Item
         let btn = UIButton()
-        btn.setImage(UIImage(named: "logo"), forState: .Normal)
+        btn.setImage(UIImage(named: "logo"), for: UIControlState())
         btn.sizeToFit()
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
     
         // 2.设置右侧的Item
-        let size = CGSizeMake(40, 40)
+        let size = CGSize(width: 40, height: 40)
         let historyItem = UIBarButtonItem.createItem("image_my_history", highImageName: "Image_my_history_click", size: size)
         
         let searchItem = UIBarButtonItem.createItem("btn_search", highImageName: "btn_search_clicked", size: size)
@@ -95,7 +95,7 @@ extension HomeViewController {
 
 // MARK:- 遵守PageTitleViewDelegate，为了给pageContentView传递值
 extension HomeViewController: PageTitleViewDelegate {
-    func pageTitleView(titleView: PageTitleView, selectIndex index: Int) {
+    func pageTitleView(_ titleView: PageTitleView, selectIndex index: Int) {
         pageContentView.setCurrentIndex(index)
     }
 }
@@ -103,7 +103,7 @@ extension HomeViewController: PageTitleViewDelegate {
 
 // MARK:- 遵守PageContentViewDelegate，为了给pageTitleView传递值
 extension HomeViewController: PageContentViewDelegate {
-    func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+    func pageContentView(_ contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         pageTitleView.setTitleWithProgess(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }

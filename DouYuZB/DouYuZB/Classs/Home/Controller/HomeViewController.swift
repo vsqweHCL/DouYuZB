@@ -52,6 +52,7 @@ class HomeViewController: UIViewController {
 
         // 设置UI界面
         setupUI()
+
     }
 }
 

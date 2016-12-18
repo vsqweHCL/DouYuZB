@@ -42,7 +42,7 @@ class RecommendGameView: UIView {
         collectionView.register(UINib(nibName: "CollectionViewGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
         
         // 添加内边距
-//        collectionView.contentInset = UIEdgeInsetsMake(0, kEdgeInsetMargin, 0, kEdgeInsetMargin)
+        collectionView.contentInset = UIEdgeInsetsMake(0, kEdgeInsetMargin, 0, kEdgeInsetMargin)
     }
 }
 // MARK:- 遵守UICollectionView的数据源协议

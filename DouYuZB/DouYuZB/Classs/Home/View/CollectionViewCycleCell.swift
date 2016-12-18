@@ -18,6 +18,15 @@ class CollectionViewCycleCell: UICollectionViewCell {
     var cycleModel : CycleModel? {
         didSet {
             titleLabel.text = cycleModel?.title
+
+            // 传空字符串有能闪退
+//            if let iconURL = URL(string: cycleModel?.tv_pic_url ?? "") {
+//                iconImageView.kf.setImage(with: iconURL)
+//            }
+//            else {
+//                iconImageView.image = UIImage(named: "Img_default")
+//            }
+            
             let iconURL = URL(string: cycleModel?.tv_pic_url ?? "")
             iconImageView.kf.setImage(with: iconURL, placeholder: UIImage(named: "Img_default"))
         }

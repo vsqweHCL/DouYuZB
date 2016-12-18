@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionViewPrettyCell: UICollectionViewCell {
     // MARK:- 定义模型属性
@@ -31,6 +32,9 @@ class CollectionViewPrettyCell: UICollectionViewCell {
             nameLabel.text = anchor.nickname
             // 所在城市
             cityBtn.setTitle(anchor.anchor_city, for: UIControlState.normal)
+            // 设置封面图片
+            guard let iconUrl = URL(string: anchor.vertical_src) else {return}
+            iconImageView.kf.setImage(with: iconUrl, placeholder: UIImage(named: ""))
         }
     }
     

@@ -13,6 +13,9 @@ class RecommendViewModel {
     lazy var anrchorGroups : [AnchorGroup] = [AnchorGroup]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup(dict: ["" : "" as NSObject])
     fileprivate lazy var prettyDataGroup : AnchorGroup = AnchorGroup(dict: ["" : "" as NSObject])
+    
+    // MARK:- 保存轮播图数组
+    lazy var cycleModels : [CycleModel] = [CycleModel]()
 }
 
 // MARK:- 发送网络请求
@@ -105,5 +108,25 @@ extension RecommendViewModel {
             
             finshCallBack()
         })
+    }
+    
+    
+    /// 请求无线轮播的数据
+    func requestCycleData(finshCallBack : @escaping ()->()) {
+        NetworkTools.requestData(type: .GET, urlString: "http://capi.douyucdn.cn/api/v1/slide/6", parameters: ["version":"2.300"]) { (result) in
+            
+            // 1 将result转成字典类型
+            guard let resultDic = result as? [String : NSObject] else {return}
+
+            // 2 根据data该key，获取数组
+            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else {return}
+            
+            // 3 字典转模型
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
+            
+            finshCallBack()
+        }
     }
 }

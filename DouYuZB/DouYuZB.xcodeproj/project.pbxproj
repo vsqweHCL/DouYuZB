@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		0027320ED5E045F684D79E10 /* Pods_DouYuZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF27FDE4A8AF786C3F82EBC /* Pods_DouYuZB.framework */; };
 		49AE95E719FC3DB0EE8266E5 /* Pods_DouYuZBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B7D1439B4B1A3A5E9DDE67 /* Pods_DouYuZBUITests.framework */; };
+		DA2260291E06614200FB5B9D /* CollectionViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2260281E06614200FB5B9D /* CollectionViewBaseCell.swift */; };
+		DA22602B1E06638200FB5B9D /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22602A1E06638200FB5B9D /* RecommendCycleView.swift */; };
+		DA22602D1E06638F00FB5B9D /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA22602C1E06638F00FB5B9D /* RecommendCycleView.xib */; };
+		DA22602F1E06B64600FB5B9D /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22602E1E06B64600FB5B9D /* CycleModel.swift */; };
 		DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257F011DCB6ED4000BD7B9 /* PageTitleView.swift */; };
 		DA257F041DCB70C1000BD7B9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257F031DCB70C1000BD7B9 /* Common.swift */; };
 		DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257F051DCB7C4E000BD7B9 /* PageContentView.swift */; };
@@ -68,6 +72,10 @@
 		A6B48205DAA4DE885FF680DC /* Pods-DouYuZBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZBTests/Pods-DouYuZBTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6C3D8D58F0AF8498E753876 /* Pods-DouYuZBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZBUITests/Pods-DouYuZBUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BAF27FDE4A8AF786C3F82EBC /* Pods_DouYuZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA2260281E06614200FB5B9D /* CollectionViewBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewBaseCell.swift; sourceTree = "<group>"; };
+		DA22602A1E06638200FB5B9D /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
+		DA22602C1E06638F00FB5B9D /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
+		DA22602E1E06B64600FB5B9D /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
 		DA257F011DCB6ED4000BD7B9 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		DA257F031DCB70C1000BD7B9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		DA257F051DCB7C4E000BD7B9 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -277,6 +285,7 @@
 		DAA4CBA01DCB016000AD517B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DA22602E1E06B64600FB5B9D /* CycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +295,8 @@
 			children = (
 				DAC2B1251DDCB41C009E2599 /* CollectionHeaderView.swift */,
 				DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */,
+				DA22602A1E06638200FB5B9D /* RecommendCycleView.swift */,
+				DA22602C1E06638F00FB5B9D /* RecommendCycleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +327,7 @@
 				DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */,
 				DAC2B12D1DDCC294009E2599 /* CollectionViewPrettyCell.swift */,
 				DAC2B12E1DDCC294009E2599 /* CollectionViewPrettyCell.xib */,
+				DA2260281E06614200FB5B9D /* CollectionViewBaseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,6 +486,7 @@
 				DAC2B1301DDCC294009E2599 /* CollectionViewPrettyCell.xib in Resources */,
 				DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */,
 				DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */,
+				DA22602D1E06638F00FB5B9D /* RecommendCycleView.xib in Resources */,
 				DAA4A2CE1DCA6F100093E4D4 /* Live.storyboard in Resources */,
 				DAA4A2D31DCA6F460093E4D4 /* Profile.storyboard in Resources */,
 				DAA4A2D01DCA6F2E0093E4D4 /* Follow.storyboard in Resources */,
@@ -639,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA22602B1E06638200FB5B9D /* RecommendCycleView.swift in Sources */,
 				DAA4CBA61DCB019E00AD517B /* MainViewController.swift in Sources */,
 				DAC2B1271DDCB41C009E2599 /* CollectionHeaderView.swift in Sources */,
 				DA257F081DCB7E53000BD7B9 /* UIColor-Extension.swift in Sources */,
@@ -646,8 +660,10 @@
 				DA2DFD1A1E059650001CD14E /* AnchorGroup.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
+				DA22602F1E06B64600FB5B9D /* CycleModel.swift in Sources */,
 				DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */,
 				DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */,
+				DA2260291E06614200FB5B9D /* CollectionViewBaseCell.swift in Sources */,
 				DAC2B12F1DDCC294009E2599 /* CollectionViewPrettyCell.swift in Sources */,
 				DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */,
 				DA2DFD181E0592A3001CD14E /* NSDate-Extension.swift in Sources */,

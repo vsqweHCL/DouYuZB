@@ -17,6 +17,7 @@ private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH: CGFloat = 50
 
 private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH : CGFloat = 90.0
 
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -24,9 +25,14 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
     // MARK:- 懒加载
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
     fileprivate lazy var cycleView : RecommendCycleView = {
         let cycleView = RecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH+kGameViewH), width: kScreenW, height: kCycleViewH)
         return cycleView
     }()
     fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
@@ -78,6 +84,9 @@ extension RecommendViewController
         // 请求推荐数据
         recommendVM.requestData {
             self.collectionView.reloadData()
+            
+            // 将数据传递给gameView
+            self.gameView.groups = self.recommendVM.anrchorGroups
         }
         
         // 请求轮播数据
@@ -98,9 +107,11 @@ extension RecommendViewController
         
         // 2.将cycleView添加到UICollectionView中
         collectionView.addSubview(cycleView)
+        // 将gameView添加到UICollectionView中
+        collectionView.addSubview(gameView)
         
         // 3.设置collectionView的内边距
-        collectionView.contentInset = UIEdgeInsetsMake(kCycleViewH, 0, 0, 0)
+        collectionView.contentInset = UIEdgeInsetsMake(kCycleViewH+kGameViewH, 0, 0, 0)
     }
 }
 // MARK:- 遵守UICollectionView的数据源协议

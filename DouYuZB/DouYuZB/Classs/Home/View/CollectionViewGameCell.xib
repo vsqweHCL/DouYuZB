@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewGameCell" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈哈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRN-ae-rwW">
+                        <rect key="frame" x="0.0" y="60" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Wpa-U5-xZN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cfy-c8-gRV">
+                        <rect key="frame" x="20" y="15" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Cfy-c8-gRV" secondAttribute="height" multiplier="45:45" id="6wg-kH-XRB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="SRN-ae-rwW" secondAttribute="bottom" constant="10" id="044-eu-PfQ"/>
+                <constraint firstItem="Cfy-c8-gRV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="6DV-w2-dYB"/>
+                <constraint firstAttribute="trailing" secondItem="SRN-ae-rwW" secondAttribute="trailing" id="ErL-hq-Asj"/>
+                <constraint firstItem="SRN-ae-rwW" firstAttribute="top" secondItem="Cfy-c8-gRV" secondAttribute="bottom" constant="5" id="Qzy-c9-ItF"/>
+                <constraint firstItem="SRN-ae-rwW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l4D-kj-fx1"/>
+                <constraint firstItem="Cfy-c8-gRV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wdF-38-0jd"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="Cfy-c8-gRV" id="5em-8Y-erR"/>
+                <outlet property="nameLabel" destination="SRN-ae-rwW" id="kJU-zc-bD2"/>
+            </connections>
+            <point key="canvasLocation" x="-423" y="-13"/>
+        </collectionViewCell>
+    </objects>
+</document>

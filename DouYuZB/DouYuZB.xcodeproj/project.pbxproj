@@ -13,6 +13,8 @@
 		DA22602B1E06638200FB5B9D /* RecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22602A1E06638200FB5B9D /* RecommendCycleView.swift */; };
 		DA22602D1E06638F00FB5B9D /* RecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA22602C1E06638F00FB5B9D /* RecommendCycleView.xib */; };
 		DA22602F1E06B64600FB5B9D /* CycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA22602E1E06B64600FB5B9D /* CycleModel.swift */; };
+		DA2260321E06BA4A00FB5B9D /* CollectionViewCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2260301E06BA4A00FB5B9D /* CollectionViewCycleCell.swift */; };
+		DA2260331E06BA4A00FB5B9D /* CollectionViewCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA2260311E06BA4A00FB5B9D /* CollectionViewCycleCell.xib */; };
 		DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257F011DCB6ED4000BD7B9 /* PageTitleView.swift */; };
 		DA257F041DCB70C1000BD7B9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257F031DCB70C1000BD7B9 /* Common.swift */; };
 		DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA257F051DCB7C4E000BD7B9 /* PageContentView.swift */; };
@@ -76,6 +78,8 @@
 		DA22602A1E06638200FB5B9D /* RecommendCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendCycleView.swift; sourceTree = "<group>"; };
 		DA22602C1E06638F00FB5B9D /* RecommendCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendCycleView.xib; sourceTree = "<group>"; };
 		DA22602E1E06B64600FB5B9D /* CycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CycleModel.swift; sourceTree = "<group>"; };
+		DA2260301E06BA4A00FB5B9D /* CollectionViewCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCycleCell.swift; sourceTree = "<group>"; };
+		DA2260311E06BA4A00FB5B9D /* CollectionViewCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCycleCell.xib; sourceTree = "<group>"; };
 		DA257F011DCB6ED4000BD7B9 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		DA257F031DCB70C1000BD7B9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		DA257F051DCB7C4E000BD7B9 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 				DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */,
 				DA22602A1E06638200FB5B9D /* RecommendCycleView.swift */,
 				DA22602C1E06638F00FB5B9D /* RecommendCycleView.xib */,
+				DA2260301E06BA4A00FB5B9D /* CollectionViewCycleCell.swift */,
+				DA2260311E06BA4A00FB5B9D /* CollectionViewCycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,6 +496,7 @@
 				DAA4A2CE1DCA6F100093E4D4 /* Live.storyboard in Resources */,
 				DAA4A2D31DCA6F460093E4D4 /* Profile.storyboard in Resources */,
 				DAA4A2D01DCA6F2E0093E4D4 /* Follow.storyboard in Resources */,
+				DA2260331E06BA4A00FB5B9D /* CollectionViewCycleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +668,7 @@
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
 				DA22602F1E06B64600FB5B9D /* CycleModel.swift in Sources */,
+				DA2260321E06BA4A00FB5B9D /* CollectionViewCycleCell.swift in Sources */,
 				DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */,
 				DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */,
 				DA2260291E06614200FB5B9D /* CollectionViewBaseCell.swift in Sources */,

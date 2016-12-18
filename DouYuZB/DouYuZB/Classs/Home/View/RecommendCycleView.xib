@@ -25,7 +25,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Clc-4Q-1DR">
-                    <rect key="frame" x="271" y="113" width="39" height="37"/>
+                    <rect key="frame" x="271" y="116" width="39" height="37"/>
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="currentPageIndicatorTintColor" red="1" green="0.63911552859999998" blue="0.3748983837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
@@ -34,7 +34,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="wi5-cH-GTR" secondAttribute="trailing" id="69B-pz-KAN"/>
                 <constraint firstAttribute="trailing" secondItem="Clc-4Q-1DR" secondAttribute="trailing" constant="10" id="6mB-gD-Szo"/>
-                <constraint firstAttribute="bottom" secondItem="Clc-4Q-1DR" secondAttribute="bottom" id="Cn2-A0-7K9"/>
+                <constraint firstAttribute="bottom" secondItem="Clc-4Q-1DR" secondAttribute="bottom" constant="-3" id="Cn2-A0-7K9"/>
                 <constraint firstItem="wi5-cH-GTR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DC1-hm-7k1"/>
                 <constraint firstItem="wi5-cH-GTR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZVB-gY-tto"/>
                 <constraint firstAttribute="bottom" secondItem="wi5-cH-GTR" secondAttribute="bottom" id="Zct-eX-ATJ"/>

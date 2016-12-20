@@ -13,7 +13,7 @@ class CollectionViewGameCell: UICollectionViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
-    var group : AnchorGroup? {
+    var group : BaseGameModel? {
         didSet {
             nameLabel.text = group?.tag_name
             

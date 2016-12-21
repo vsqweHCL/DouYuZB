@@ -43,6 +43,7 @@
 		DAA4CBA81DCB01D100AD517B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA4CBA71DCB01D100AD517B /* Home.storyboard */; };
 		DAA4CBAA1DCB01FB00AD517B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */; };
 		DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4CBAC1DCB107600AD517B /* UIBarButtonItem-Extension.swift */; };
+		DABBE2211E0AD925003900C3 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABBE2201E0AD925003900C3 /* AmuseViewController.swift */; };
 		DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */; };
 		DAC2B1271DDCB41C009E2599 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B1251DDCB41C009E2599 /* CollectionHeaderView.swift */; };
 		DAC2B1281DDCB41C009E2599 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */; };
@@ -122,6 +123,7 @@
 		DAA4CBA71DCB01D100AD517B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DAA4CBAC1DCB107600AD517B /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		DABBE2201E0AD925003900C3 /* AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
 		DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		DAC2B1251DDCB41C009E2599 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		DAC2B1261DDCB41C009E2599 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				DAA4CBA91DCB01FB00AD517B /* HomeViewController.swift */,
 				DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */,
 				DA22603C1E06D7CD00FB5B9D /* GameViewController.swift */,
+				DABBE2201E0AD925003900C3 /* AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -699,6 +702,7 @@
 				DA4C3A681E09732D00F02063 /* GameModel.swift in Sources */,
 				DA4C3A6A1E09765D00F02063 /* BaseGameModel.swift in Sources */,
 				DA2260321E06BA4A00FB5B9D /* CollectionViewCycleCell.swift in Sources */,
+				DABBE2211E0AD925003900C3 /* AmuseViewController.swift in Sources */,
 				DA257F021DCB6ED4000BD7B9 /* PageTitleView.swift in Sources */,
 				DA257F061DCB7C4E000BD7B9 /* PageContentView.swift in Sources */,
 				DA2260291E06614200FB5B9D /* CollectionViewBaseCell.swift in Sources */,

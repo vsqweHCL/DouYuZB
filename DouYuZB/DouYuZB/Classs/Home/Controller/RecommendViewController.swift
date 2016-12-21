@@ -83,10 +83,21 @@ extension RecommendViewController
     fileprivate func loadData() {
         // 请求推荐数据
         recommendVM.requestData {
+            // 1.展示推荐书籍
             self.collectionView.reloadData()
             
+            // 2.将数据传递给GameView
+            var groups = self.recommendVM.anrchorGroups
+            // 先移除前两组数据
+            groups.removeFirst()
+            groups.removeFirst()
+            // 添加更多
+            let moreGroup = AnchorGroup(dict: ["" : "" as NSObject])
+            moreGroup.tag_name = "更多"
+            groups.append(moreGroup)
+            
             // 将数据传递给gameView
-            self.gameView.groups = self.recommendVM.anrchorGroups
+            self.gameView.groups = groups
         }
         
         // 请求轮播数据

@@ -13,11 +13,27 @@ private let kItemW : CGFloat = (kScreenW - 2 * kEdgeMargin) / 3
 private let kItemH : CGFloat = kItemW * 6 / 5
 private let kHeaderViewH : CGFloat = 50
 
+private let kGameViewH : CGFloat = 90
+
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
 class GameViewController: UIViewController {
-    
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
+    fileprivate lazy var topHeaderView : CollectionHeaderView = {
+        let headerView = CollectionHeaderView.collectionHeaderView()
+        headerView.frame = CGRect(x: 0, y: -kHeaderViewH-kGameViewH, width: kScreenW, height: kHeaderViewH)
+        // 设置属性
+        headerView.titleLabel.text = "常见"
+        headerView.iconImageView.image = UIImage(named: "Img_orange")
+        headerView.moreBtn.isHidden = true
+        
+        return headerView
+    }()
     fileprivate lazy var gameVM : GameViewModel = GameViewModel()
     // MARK:- 懒加载属性
     fileprivate lazy var collectionView : UICollectionView = {[weak self] in
@@ -60,7 +76,17 @@ class GameViewController: UIViewController {
 extension GameViewController {
     fileprivate func loadData() {
         gameVM.loadAllGameData {
+            // 1.展示全部游戏
             self.collectionView.reloadData()
+            
+            // 2.展示常用游戏
+//            var temArray = [BaseGameModel]()
+//            for i in 0..<10 {
+//                temArray.append(self.gameVM.games[i])
+//            }
+//            self.gameView.groups = temArray
+/********************获取数组对于范围的数据*************************/
+            self.gameView.groups = Array(self.gameVM.games[0..<10])
         }
     }
 }
@@ -69,6 +95,15 @@ extension GameViewController {
 extension GameViewController {
     func setupUI() {
         view.addSubview(collectionView)
+        
+        // 添加顶部的headerView
+        collectionView.addSubview(topHeaderView)
+        
+        // 添加常用游戏的view
+        collectionView.addSubview(gameView)
+        
+        // 设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsetsMake(kHeaderViewH+kGameViewH, 0, 0, 0)
     }
 }
 

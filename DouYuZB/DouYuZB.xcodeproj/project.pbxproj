@@ -27,6 +27,7 @@
 		DA2DFD181E0592A3001CD14E /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DFD171E0592A3001CD14E /* NSDate-Extension.swift */; };
 		DA2DFD1A1E059650001CD14E /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DFD191E059650001CD14E /* AnchorGroup.swift */; };
 		DA2DFD1C1E059B3F001CD14E /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2DFD1B1E059B3F001CD14E /* AnchorModel.swift */; };
+		DA36BE081E0C228A0092D2F4 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36BE071E0C228A0092D2F4 /* AmuseViewModel.swift */; };
 		DA4C3A661E09714400F02063 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C3A651E09714400F02063 /* GameViewModel.swift */; };
 		DA4C3A681E09732D00F02063 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C3A671E09732D00F02063 /* GameModel.swift */; };
 		DA4C3A6A1E09765D00F02063 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C3A691E09765D00F02063 /* BaseGameModel.swift */; };
@@ -51,6 +52,8 @@
 		DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */; };
 		DAC2B12F1DDCC294009E2599 /* CollectionViewPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2B12D1DDCC294009E2599 /* CollectionViewPrettyCell.swift */; };
 		DAC2B1301DDCC294009E2599 /* CollectionViewPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2B12E1DDCC294009E2599 /* CollectionViewPrettyCell.xib */; };
+		DAD3E9B31E0C25EF00F13FA5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3E9B21E0C25EF00F13FA5 /* BaseViewModel.swift */; };
+		DAD3E9B51E0C290F00F13FA5 /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD3E9B41E0C290F00F13FA5 /* BaseAnchorViewController.swift */; };
 		DAEF8DB01DF704F600A65A3E /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF8DAF1DF704F600A65A3E /* NetworkTools.swift */; };
 		DAEF8DB31DF707C700A65A3E /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF8DB21DF707C700A65A3E /* RecommendViewModel.swift */; };
 		FAB90233AAF262B0DA6BC2A4 /* Pods_DouYuZBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E3104F0A1421D140C13841 /* Pods_DouYuZBTests.framework */; };
@@ -101,6 +104,7 @@
 		DA2DFD171E0592A3001CD14E /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
 		DA2DFD191E059650001CD14E /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		DA2DFD1B1E059B3F001CD14E /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		DA36BE071E0C228A0092D2F4 /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
 		DA4C3A651E09714400F02063 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		DA4C3A671E09732D00F02063 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		DA4C3A691E09765D00F02063 /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 		DAC2B12A1DDCBA0C009E2599 /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
 		DAC2B12D1DDCC294009E2599 /* CollectionViewPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPrettyCell.swift; sourceTree = "<group>"; };
 		DAC2B12E1DDCC294009E2599 /* CollectionViewPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewPrettyCell.xib; sourceTree = "<group>"; };
+		DAD3E9B21E0C25EF00F13FA5 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		DAD3E9B41E0C290F00F13FA5 /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
 		DAEF8DAF1DF704F600A65A3E /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		DAEF8DB21DF707C700A65A3E /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +274,7 @@
 		DAA4A2C81DCA66E30093E4D4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DAD3E9B11E0C25E200F13FA5 /* ViewModel */,
 				DAA4CBA21DCB019E00AD517B /* Controller */,
 				DAA4CBA41DCB019E00AD517B /* Model */,
 				DAA4CBA51DCB019E00AD517B /* View */,
@@ -336,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA4CBA31DCB019E00AD517B /* MainViewController.swift */,
+				DAD3E9B41E0C290F00F13FA5 /* BaseAnchorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -374,11 +382,20 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		DAD3E9B11E0C25E200F13FA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3E9B21E0C25EF00F13FA5 /* BaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DAEF8DB11DF7079C00A65A3E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				DAEF8DB21DF707C700A65A3E /* RecommendViewModel.swift */,
 				DA4C3A651E09714400F02063 /* GameViewModel.swift */,
+				DA36BE071E0C228A0092D2F4 /* AmuseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -690,14 +707,17 @@
 			files = (
 				DA22602B1E06638200FB5B9D /* RecommendCycleView.swift in Sources */,
 				DAA4CBA61DCB019E00AD517B /* MainViewController.swift in Sources */,
+				DA36BE081E0C228A0092D2F4 /* AmuseViewModel.swift in Sources */,
 				DAC2B1271DDCB41C009E2599 /* CollectionHeaderView.swift in Sources */,
 				DA4C3A661E09714400F02063 /* GameViewModel.swift in Sources */,
 				DA257F081DCB7E53000BD7B9 /* UIColor-Extension.swift in Sources */,
+				DAD3E9B51E0C290F00F13FA5 /* BaseAnchorViewController.swift in Sources */,
 				DA22603D1E06D7CD00FB5B9D /* GameViewController.swift in Sources */,
 				DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */,
 				DA2DFD1A1E059650001CD14E /* AnchorGroup.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
+				DAD3E9B31E0C25EF00F13FA5 /* BaseViewModel.swift in Sources */,
 				DA22602F1E06B64600FB5B9D /* CycleModel.swift in Sources */,
 				DA4C3A681E09732D00F02063 /* GameModel.swift in Sources */,
 				DA4C3A6A1E09765D00F02063 /* BaseGameModel.swift in Sources */,
@@ -874,6 +894,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4200827628D835D9EF2FC8C6 /* Pods-DouYuZB.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DouYuZB/Info.plist;
@@ -889,6 +910,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5EFE97E8F86AD7E228BF29B9 /* Pods-DouYuZB.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DouYuZB/Info.plist;

@@ -87,7 +87,7 @@ extension RecommendViewController
             self.collectionView.reloadData()
             
             // 2.将数据传递给GameView
-            var groups = self.recommendVM.anrchorGroups
+            var groups = self.recommendVM.anchorGroups
             // 先移除前两组数据
             groups.removeFirst()
             groups.removeFirst()
@@ -129,18 +129,18 @@ extension RecommendViewController
 extension RecommendViewController: UICollectionViewDataSource
 {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return recommendVM.anrchorGroups.count
+        return recommendVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let group = recommendVM.anrchorGroups[section]
+        let group = recommendVM.anchorGroups[section]
         
         return group.anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         // 0.取出模型
-        let group = recommendVM.anrchorGroups[indexPath.section]
+        let group = recommendVM.anchorGroups[indexPath.section]
         let anchor = group.anchors[indexPath.item]
         
         // 1.获取cell
@@ -161,7 +161,7 @@ extension RecommendViewController: UICollectionViewDataSource
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
         
         // 2.取出模型
-        let group = recommendVM.anrchorGroups[indexPath.section]
+        let group = recommendVM.anchorGroups[indexPath.section]
         headerView.group = group
         return headerView
         

@@ -8,9 +8,9 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
     // MARK:- 懒加载属性
-    lazy var anrchorGroups : [AnchorGroup] = [AnchorGroup]()
+//    lazy var anrchorGroups : [AnchorGroup] = [AnchorGroup]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup(dict: ["" : "" as NSObject])
     fileprivate lazy var prettyDataGroup : AnchorGroup = AnchorGroup(dict: ["" : "" as NSObject])
     
@@ -78,33 +78,35 @@ extension RecommendViewModel {
         }
         // 3.请求2-12部分游戏数据
         dis_group.enter() // 进入线程组
-        NetworkTools.requestData(type: .GET, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit" : "4","offset":"0","time":NSDate.getCurrentTime()]) { (result) in
-    
-            // 1 将result转成字典类型
-            guard let resultDic = result as? [String : NSObject] else {return}
-            
-            // 2 根据data该key，获取数组
-            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else {return}
-            
-            // 3 遍历数组，获取字典，并且将字典转成模型对象
-            for dict in dataArray {
-                let group = AnchorGroup(dict: dict)
-                self.anrchorGroups.append(group)
-            }
-            
+        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit" : "4","offset":"0","time":NSDate.getCurrentTime()]) {
             dis_group.leave() // 离开线程group
-            
+        }
+//        NetworkTools.requestData(type: .GET, urlString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: ["limit" : "4","offset":"0","time":NSDate.getCurrentTime()]) { (result) in
+//    
+//            // 1 将result转成字典类型
+//            guard let resultDic = result as? [String : NSObject] else {return}
+//            
+//            // 2 根据data该key，获取数组
+//            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else {return}
+//            
+//            // 3 遍历数组，获取字典，并且将字典转成模型对象
+//            for dict in dataArray {
+//                let group = AnchorGroup(dict: dict)
+//                self.anchorGroups.append(group)
+//            }
+//            dis_group.leave() // 离开线程group
+        
 //            for group in self.anrchorGroups {
 //                for anchor in group.anchors {
 //                    print(anchor.nickname)
 //                }
 //            }
-        }
+//        }
         
         // 所有的数据请求到之后进行排序
         dis_group.notify(queue: DispatchQueue.main, execute: {
-            self.anrchorGroups.insert(self.prettyDataGroup, at: 0)
-            self.anrchorGroups.insert(self.bigDataGroup, at: 0)
+            self.anchorGroups.insert(self.prettyDataGroup, at: 0)
+            self.anchorGroups.insert(self.bigDataGroup, at: 0)
             
             finshCallBack()
         })

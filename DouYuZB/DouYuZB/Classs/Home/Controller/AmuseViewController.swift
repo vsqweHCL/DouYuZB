@@ -23,7 +23,7 @@ class AmuseViewController: BaseAnchorViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.orange
+        
         
     }
 }
@@ -54,6 +54,8 @@ extension AmuseViewController
             var tempGroups = self.amuseVM.anchorGroups
             tempGroups.removeFirst()
             self.menuView.groups = tempGroups
+            
+            self.loadDataFinshed()
         }
     }
 }

@@ -23,7 +23,7 @@ private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class RecommendViewController: UIViewController {
+class RecommendViewController: BaseViewController {
     // MARK:- 懒加载
     fileprivate lazy var gameView : RecommendGameView = {
         let gameView = RecommendGameView.recommendGameView()
@@ -98,6 +98,8 @@ extension RecommendViewController
             
             // 将数据传递给gameView
             self.gameView.groups = groups
+            
+            self.loadDataFinshed()
         }
         
         // 请求轮播数据
@@ -112,7 +114,11 @@ extension RecommendViewController
 // MARK:- 设置UI界面内容
 extension RecommendViewController
 {
-    fileprivate func setupUI() {
+     override func setupUI() {
+        
+        // 1.给父类中的内容View的引用进行复制
+        contentView = collectionView
+        
         // 1.将UICollectionView添加到控制器view
         view.addSubview(collectionView)
         
@@ -123,6 +129,8 @@ extension RecommendViewController
         
         // 3.设置collectionView的内边距
         collectionView.contentInset = UIEdgeInsetsMake(kCycleViewH+kGameViewH, 0, 0, 0)
+        
+        super.setupUI()
     }
 }
 // MARK:- 遵守UICollectionView的数据源协议

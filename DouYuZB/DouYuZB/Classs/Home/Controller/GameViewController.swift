@@ -18,7 +18,7 @@ private let kGameViewH : CGFloat = 90
 private let kGameCellID = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class GameViewController: UIViewController {
+class GameViewController: BaseViewController {
     fileprivate lazy var gameView : RecommendGameView = {
         let gameView = RecommendGameView.recommendGameView()
         gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
@@ -87,13 +87,19 @@ extension GameViewController {
 //            self.gameView.groups = temArray
 /********************获取数组对于范围的数据*************************/
             self.gameView.groups = Array(self.gameVM.games[0..<10])
+            
+            self.loadDataFinshed()
         }
     }
 }
 
 // MARK:- 设置UI
 extension GameViewController {
-    func setupUI() {
+    override func setupUI() {
+        
+        // 1.给父类中的内容View的引用进行复制
+        contentView = collectionView
+        
         view.addSubview(collectionView)
         
         // 添加顶部的headerView
@@ -104,6 +110,8 @@ extension GameViewController {
         
         // 设置collectionView的内边距
         collectionView.contentInset = UIEdgeInsetsMake(kHeaderViewH+kGameViewH, 0, 0, 0)
+        
+        super.setupUI()
     }
 }
 

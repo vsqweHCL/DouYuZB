@@ -20,7 +20,7 @@ private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
 
     // MARK:- 定义属性
     var baseVM : BaseViewModel!
@@ -74,9 +74,17 @@ extension BaseAnchorViewController
 // MARK:- 设置UI界面内容
 extension BaseAnchorViewController
 {
-    func setupUI() {
-        // 1.将UICollectionView添加到控制器view
+    override func setupUI() {
+        // 1.给父类中的内容View的引用进行复制
+        contentView = collectionView
+        
+        // 2.将UICollectionView添加到控制器view
         view.addSubview(collectionView)
+        
+        
+        // 如果先调用super的话，内容view是空的
+        super.setupUI()
+        
     }
 }
 

@@ -37,6 +37,7 @@
 		DA84B8EB1E0F992500421909 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */; };
 		DA84B8ED1E0FA66600421909 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */; };
 		DA84B8EF1E0FA99A00421909 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */; };
+		DA84B8F11E0FB1BB00421909 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8F01E0FB1BB00421909 /* BaseViewController.swift */; };
 		DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */; };
 		DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29A1DCA55920093E4D4 /* Main.storyboard */; };
 		DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29D1DCA55920093E4D4 /* Assets.xcassets */; };
@@ -120,6 +121,7 @@
 		DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
+		DA84B8F01E0FB1BB00421909 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DAA4A2931DCA55920093E4D4 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA4A29B1DCA55920093E4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 			children = (
 				DAA4CBA31DCB019E00AD517B /* MainViewController.swift */,
 				DAD3E9B41E0C290F00F13FA5 /* BaseAnchorViewController.swift */,
+				DA84B8F01E0FB1BB00421909 /* BaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -730,6 +733,7 @@
 				DA36BE081E0C228A0092D2F4 /* AmuseViewModel.swift in Sources */,
 				DAC2B1271DDCB41C009E2599 /* CollectionHeaderView.swift in Sources */,
 				DA4C3A661E09714400F02063 /* GameViewModel.swift in Sources */,
+				DA84B8F11E0FB1BB00421909 /* BaseViewController.swift in Sources */,
 				DA257F081DCB7E53000BD7B9 /* UIColor-Extension.swift in Sources */,
 				DAD3E9B51E0C290F00F13FA5 /* BaseAnchorViewController.swift in Sources */,
 				DA22603D1E06D7CD00FB5B9D /* GameViewController.swift in Sources */,

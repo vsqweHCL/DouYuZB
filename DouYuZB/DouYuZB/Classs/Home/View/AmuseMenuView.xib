@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AmuseMenuView" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="C96-z5-5P0">
+                    <rect key="frame" x="141" y="168" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.63911552859999998" blue="0.3748983837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </pageControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="e5C-je-6vt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="oru-Cm-fzn">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="C96-z5-5P0" secondAttribute="bottom" constant="-5" id="1s1-HT-W4U"/>
+                <constraint firstItem="e5C-je-6vt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7jE-eh-BYb"/>
+                <constraint firstItem="C96-z5-5P0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EQe-h5-sg4"/>
+                <constraint firstAttribute="trailing" secondItem="e5C-je-6vt" secondAttribute="trailing" id="PUQ-E2-7rN"/>
+                <constraint firstItem="C96-z5-5P0" firstAttribute="top" secondItem="e5C-je-6vt" secondAttribute="bottom" constant="-5" id="XRd-B2-u2D"/>
+                <constraint firstItem="e5C-je-6vt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f08-zm-2RL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="e5C-je-6vt" id="M90-Ye-KUN"/>
+                <outlet property="pageControl" destination="C96-z5-5P0" id="O9t-fn-AfE"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="44"/>
+        </view>
+    </objects>
+</document>

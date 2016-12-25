@@ -31,6 +31,10 @@
 		DA4C3A661E09714400F02063 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C3A651E09714400F02063 /* GameViewModel.swift */; };
 		DA4C3A681E09732D00F02063 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C3A671E09732D00F02063 /* GameModel.swift */; };
 		DA4C3A6A1E09765D00F02063 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4C3A691E09765D00F02063 /* BaseGameModel.swift */; };
+		DA84B8E51E0F952200421909 /* AmuseMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8E41E0F952200421909 /* AmuseMenuView.swift */; };
+		DA84B8E71E0F952E00421909 /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA84B8E61E0F952E00421909 /* AmuseMenuView.xib */; };
+		DA84B8EA1E0F992500421909 /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8E81E0F992500421909 /* AmuseMenuViewCell.swift */; };
+		DA84B8EB1E0F992500421909 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */; };
 		DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */; };
 		DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29A1DCA55920093E4D4 /* Main.storyboard */; };
 		DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29D1DCA55920093E4D4 /* Assets.xcassets */; };
@@ -108,6 +112,10 @@
 		DA4C3A651E09714400F02063 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		DA4C3A671E09732D00F02063 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		DA4C3A691E09765D00F02063 /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
+		DA84B8E41E0F952200421909 /* AmuseMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuView.swift; sourceTree = "<group>"; };
+		DA84B8E61E0F952E00421909 /* AmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
+		DA84B8E81E0F992500421909 /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
+		DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		DAA4A2931DCA55920093E4D4 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA4A29B1DCA55920093E4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -335,6 +343,10 @@
 				DA2260361E06CC5C00FB5B9D /* RecommendGameView.xib */,
 				DA2260381E06D06800FB5B9D /* CollectionViewGameCell.swift */,
 				DA2260391E06D06800FB5B9D /* CollectionViewGameCell.xib */,
+				DA84B8E41E0F952200421909 /* AmuseMenuView.swift */,
+				DA84B8E61E0F952E00421909 /* AmuseMenuView.xib */,
+				DA84B8E81E0F992500421909 /* AmuseMenuViewCell.swift */,
+				DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -530,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA4CBA81DCB01D100AD517B /* Home.storyboard in Resources */,
+				DA84B8EB1E0F992500421909 /* AmuseMenuViewCell.xib in Resources */,
 				DAC2B1281DDCB41C009E2599 /* CollectionHeaderView.xib in Resources */,
 				DAA4A2A11DCA55920093E4D4 /* LaunchScreen.storyboard in Resources */,
 				DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */,
@@ -537,6 +550,7 @@
 				DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */,
 				DA22603B1E06D06800FB5B9D /* CollectionViewGameCell.xib in Resources */,
 				DAC2B12C1DDCBA0C009E2599 /* CollectionViewNormalCell.xib in Resources */,
+				DA84B8E71E0F952E00421909 /* AmuseMenuView.xib in Resources */,
 				DA22602D1E06638F00FB5B9D /* RecommendCycleView.xib in Resources */,
 				DAA4A2CE1DCA6F100093E4D4 /* Live.storyboard in Resources */,
 				DAA4A2D31DCA6F460093E4D4 /* Profile.storyboard in Resources */,
@@ -715,6 +729,7 @@
 				DA22603D1E06D7CD00FB5B9D /* GameViewController.swift in Sources */,
 				DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */,
 				DA2DFD1A1E059650001CD14E /* AnchorGroup.swift in Sources */,
+				DA84B8EA1E0F992500421909 /* AmuseMenuViewCell.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
 				DAD3E9B31E0C25EF00F13FA5 /* BaseViewModel.swift in Sources */,
@@ -730,6 +745,7 @@
 				DA22603A1E06D06800FB5B9D /* CollectionViewGameCell.swift in Sources */,
 				DAC2B12F1DDCC294009E2599 /* CollectionViewPrettyCell.swift in Sources */,
 				DAA4CBAD1DCB107600AD517B /* UIBarButtonItem-Extension.swift in Sources */,
+				DA84B8E51E0F952200421909 /* AmuseMenuView.swift in Sources */,
 				DA2DFD181E0592A3001CD14E /* NSDate-Extension.swift in Sources */,
 				DA257F041DCB70C1000BD7B9 /* Common.swift in Sources */,
 				DAEF8DB01DF704F600A65A3E /* NetworkTools.swift in Sources */,

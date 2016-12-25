@@ -28,9 +28,9 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="火热" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frr-A7-P98">
-                    <rect key="frame" x="42" y="22" width="37" height="19.5"/>
+                    <rect key="frame" x="42" y="22" width="100" height="19.5"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="37" id="zcp-O7-g27"/>
+                        <constraint firstAttribute="width" constant="100" id="zcp-O7-g27"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <nil key="textColor"/>

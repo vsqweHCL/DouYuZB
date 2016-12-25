@@ -84,17 +84,21 @@ extension BaseAnchorViewController
 extension BaseAnchorViewController: UICollectionViewDataSource
 {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if baseVM == nil { return 1 }
         return baseVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if baseVM == nil { return 20 }
         return baseVM.anchorGroups[section].anchors.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionViewNormalCell
         //        cell.backgroundColor = UIColor.randomColor()
-        
+        if baseVM == nil {
+            return cell
+        }
         cell.anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
         return cell
         
@@ -102,7 +106,9 @@ extension BaseAnchorViewController: UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
-        
+        if baseVM == nil {
+            return headerView
+        }
         headerView.group = baseVM.anchorGroups[indexPath.section]
         return headerView
     }

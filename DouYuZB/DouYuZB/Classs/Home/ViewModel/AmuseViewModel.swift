@@ -14,7 +14,7 @@ class AmuseViewModel : BaseViewModel {
 
 extension AmuseViewModel {
     func loadAmuseData(finishedCallBack : @escaping () -> ()) {
-        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", parameters: ["shortName" : "game"], finishedCallback: finishedCallBack)
+        loadAnchorData(isGroupData: true, URLString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", parameters: ["shortName" : "game"], finishedCallback: finishedCallBack)
 //        NetworkTools.requestData(type: .GET, urlString: "http://capi.douyucdn.cn/api/v1/getHotRoom/2", parameters: ["shortName" : "game"]) {(result) in
 //            
 //            // 1.获取到数据

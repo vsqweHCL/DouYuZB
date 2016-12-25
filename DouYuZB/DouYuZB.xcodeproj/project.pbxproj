@@ -35,6 +35,8 @@
 		DA84B8E71E0F952E00421909 /* AmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA84B8E61E0F952E00421909 /* AmuseMenuView.xib */; };
 		DA84B8EA1E0F992500421909 /* AmuseMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8E81E0F992500421909 /* AmuseMenuViewCell.swift */; };
 		DA84B8EB1E0F992500421909 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */; };
+		DA84B8ED1E0FA66600421909 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */; };
+		DA84B8EF1E0FA99A00421909 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */; };
 		DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */; };
 		DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29A1DCA55920093E4D4 /* Main.storyboard */; };
 		DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29D1DCA55920093E4D4 /* Assets.xcassets */; };
@@ -116,6 +118,8 @@
 		DA84B8E61E0F952E00421909 /* AmuseMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuView.xib; sourceTree = "<group>"; };
 		DA84B8E81E0F992500421909 /* AmuseMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseMenuViewCell.swift; sourceTree = "<group>"; };
 		DA84B8E91E0F992500421909 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
+		DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
+		DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		DAA4A2931DCA55920093E4D4 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA4A29B1DCA55920093E4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -317,6 +321,7 @@
 				DAC2B1231DDCA6E2009E2599 /* RecommendViewController.swift */,
 				DA22603C1E06D7CD00FB5B9D /* GameViewController.swift */,
 				DABBE2201E0AD925003900C3 /* AmuseViewController.swift */,
+				DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -408,6 +413,7 @@
 				DAEF8DB21DF707C700A65A3E /* RecommendViewModel.swift */,
 				DA4C3A651E09714400F02063 /* GameViewModel.swift */,
 				DA36BE071E0C228A0092D2F4 /* AmuseViewModel.swift */,
+				DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -730,11 +736,13 @@
 				DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */,
 				DA2DFD1A1E059650001CD14E /* AnchorGroup.swift in Sources */,
 				DA84B8EA1E0F992500421909 /* AmuseMenuViewCell.swift in Sources */,
+				DA84B8ED1E0FA66600421909 /* FunnyViewController.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
 				DAD3E9B31E0C25EF00F13FA5 /* BaseViewModel.swift in Sources */,
 				DA22602F1E06B64600FB5B9D /* CycleModel.swift in Sources */,
 				DA4C3A681E09732D00F02063 /* GameModel.swift in Sources */,
+				DA84B8EF1E0FA99A00421909 /* FunnyViewModel.swift in Sources */,
 				DA4C3A6A1E09765D00F02063 /* BaseGameModel.swift in Sources */,
 				DA2260321E06BA4A00FB5B9D /* CollectionViewCycleCell.swift in Sources */,
 				DABBE2211E0AD925003900C3 /* AmuseViewController.swift in Sources */,

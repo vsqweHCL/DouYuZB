@@ -175,6 +175,31 @@ extension RecommendViewController: UICollectionViewDataSource
         
     }
 }
+// MARK:- 遵守UICollectionView的代理协议协议
+extension RecommendViewController: UICollectionViewDelegate
+{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // 1.取出对应的主播信息
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
+        
+        // 2.判断是秀场房间还是普通房间
+        anchor.isVertical == 0 ? pushNormalRoomVc() : presentShowRoomVc()
+    }
+    
+    private func presentShowRoomVc() {
+        let showRoomVc = RoomShowViewController()
+        
+        present(showRoomVc, animated: true, completion: nil)
+    }
+    private func pushNormalRoomVc() {
+        let normalRoomVc = RoomNormalViewController()
+        
+        navigationController?.pushViewController(normalRoomVc, animated: true)
+        
+    }
+}
 // MARK:- 遵守UICollectionView的代理协议
 extension RecommendViewController: UICollectionViewDelegateFlowLayout
 {

@@ -115,6 +115,7 @@ extension GameViewController {
     }
 }
 
+// MARK:- 遵守UICollectionViewDataSource协议
 extension GameViewController : UICollectionViewDataSource
 {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -138,5 +139,13 @@ extension GameViewController : UICollectionViewDataSource
         headerView.moreBtn.isHidden = true
         
         return headerView
+    }
+}
+
+// MARK:- 遵守UICollectionView的代理协议协议
+extension GameViewController: UICollectionViewDelegate
+{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item)
     }
 }

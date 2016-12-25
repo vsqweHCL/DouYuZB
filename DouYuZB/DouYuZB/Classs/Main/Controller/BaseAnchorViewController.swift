@@ -123,6 +123,13 @@ extension BaseAnchorViewController: UICollectionViewDataSource
     
 }
 
+// MARK:- 遵守UICollectionView的代理协议协议
+extension BaseAnchorViewController: UICollectionViewDelegate
+{
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item)
+    }
+}
 
 // MARK:- 遵守UICollectionView的代理协议
 //extension BaseAnchorViewController: UICollectionViewDelegateFlowLayout

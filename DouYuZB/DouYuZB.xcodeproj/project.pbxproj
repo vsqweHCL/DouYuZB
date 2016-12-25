@@ -38,6 +38,9 @@
 		DA84B8ED1E0FA66600421909 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */; };
 		DA84B8EF1E0FA99A00421909 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */; };
 		DA84B8F11E0FB1BB00421909 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8F01E0FB1BB00421909 /* BaseViewController.swift */; };
+		DA84B8F71E0FB95600421909 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8F61E0FB95600421909 /* RoomShowViewController.swift */; };
+		DA84B8F91E0FBAF900421909 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8F81E0FBAF900421909 /* RoomNormalViewController.swift */; };
+		DA84B8FB1E0FBE7C00421909 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84B8FA1E0FBE7C00421909 /* CustomNavigationController.swift */; };
 		DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */; };
 		DAA4A29C1DCA55920093E4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29A1DCA55920093E4D4 /* Main.storyboard */; };
 		DAA4A29E1DCA55920093E4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA4A29D1DCA55920093E4D4 /* Assets.xcassets */; };
@@ -122,6 +125,9 @@
 		DA84B8EC1E0FA66600421909 /* FunnyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		DA84B8EE1E0FA99A00421909 /* FunnyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		DA84B8F01E0FB1BB00421909 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DA84B8F61E0FB95600421909 /* RoomShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		DA84B8F81E0FBAF900421909 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		DA84B8FA1E0FBE7C00421909 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		DAA4A2931DCA55920093E4D4 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA4A2961DCA55920093E4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA4A29B1DCA55920093E4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -193,6 +199,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA84B8F21E0FB94800421909 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				DA84B8F31E0FB94800421909 /* Controller */,
+				DA84B8F41E0FB94800421909 /* Model */,
+				DA84B8F51E0FB94800421909 /* View */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		DA84B8F31E0FB94800421909 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA84B8F61E0FB95600421909 /* RoomShowViewController.swift */,
+				DA84B8F81E0FBAF900421909 /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA84B8F41E0FB94800421909 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA84B8F51E0FB94800421909 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DAA4A28A1DCA55920093E4D4 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +287,7 @@
 		DAA4A2C41DCA66E30093E4D4 /* Classs */ = {
 			isa = PBXGroup;
 			children = (
+				DA84B8F21E0FB94800421909 /* Room */,
 				DAA4A2C51DCA66E30093E4D4 /* Follow */,
 				DAA4A2C61DCA66E30093E4D4 /* Home */,
 				DAA4A2C71DCA66E30093E4D4 /* Live */,
@@ -364,6 +404,7 @@
 				DAA4CBA31DCB019E00AD517B /* MainViewController.swift */,
 				DAD3E9B41E0C290F00F13FA5 /* BaseAnchorViewController.swift */,
 				DA84B8F01E0FB1BB00421909 /* BaseViewController.swift */,
+				DA84B8FA1E0FBE7C00421909 /* CustomNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -740,6 +781,8 @@
 				DAC2B1241DDCA6E2009E2599 /* RecommendViewController.swift in Sources */,
 				DA2DFD1A1E059650001CD14E /* AnchorGroup.swift in Sources */,
 				DA84B8EA1E0F992500421909 /* AmuseMenuViewCell.swift in Sources */,
+				DA84B8FB1E0FBE7C00421909 /* CustomNavigationController.swift in Sources */,
+				DA84B8F91E0FBAF900421909 /* RoomNormalViewController.swift in Sources */,
 				DA84B8ED1E0FA66600421909 /* FunnyViewController.swift in Sources */,
 				DAA4A2971DCA55920093E4D4 /* AppDelegate.swift in Sources */,
 				DAC2B12B1DDCBA0C009E2599 /* CollectionViewNormalCell.swift in Sources */,
@@ -761,6 +804,7 @@
 				DA2DFD181E0592A3001CD14E /* NSDate-Extension.swift in Sources */,
 				DA257F041DCB70C1000BD7B9 /* Common.swift in Sources */,
 				DAEF8DB01DF704F600A65A3E /* NetworkTools.swift in Sources */,
+				DA84B8F71E0FB95600421909 /* RoomShowViewController.swift in Sources */,
 				DAA4CBAA1DCB01FB00AD517B /* HomeViewController.swift in Sources */,
 				DAEF8DB31DF707C700A65A3E /* RecommendViewModel.swift in Sources */,
 				DA2DFD1C1E059B3F001CD14E /* AnchorModel.swift in Sources */,
